@@ -104,6 +104,10 @@ a {
     color: #666;
 }
 
+.user img {
+    vertical-align: middle;
+}
+
 .banner {
     height: 421px;
     background-color: #1c036c;
@@ -251,6 +255,7 @@ a {
 }
 
 .box_bd ul li {
+    position: relative;
     float: left;
     width: 228px;
     height: 270px;
@@ -259,7 +264,7 @@ a {
     background-color: #fff;
 }
 
-.box_bd ul li img {
+.box_bd ul li>img {
     width: 100%;
 }
 
@@ -268,6 +273,12 @@ a {
     font-size: 14px;
     color: #050505;
     font-weight: 400;
+}
+
+.box_bd ul li em {
+    position: absolute;
+    top: 4px;
+    right: -4px;
 }
 
 .box_bd .info {
