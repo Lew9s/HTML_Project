@@ -34,7 +34,9 @@ i {
 button,
 input {
     /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0;
+    outline: none;
 }
 
 body {
@@ -45,14 +47,14 @@ body {
     color: #666
 }
 
-.clearfix::before::after {
-    display: table;
-    content: '';
-}
-
 .clearfix::after {
+    display: block;
+    content: '';
+    height: 0;
+    visibility: hidden;
     clear: both;
 }
+
 
 .clearfix {
     *zoom: 1;
