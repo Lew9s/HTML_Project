@@ -1,0 +1,606 @@
+/* 公共css样式表 */
+/* 1.引入字体图标文件 */
+/* 字体图标相对于直接使用图片，可以任意改变颜色大小且不失真 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.woff2?t=1680745698170') format('woff2'),
+        url('../font/iconfont.woff?t=1680745698170') format('woff'),
+        url('../font/iconfont.ttf?t=1680745698170') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.style-red {
+    color: #c81623;
+}
+
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+/* 2.子元素选择器，选中所有的偶数子元素 */
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    margin: 9px 15px 0;
+}
+
+.header {
+    position: relative;
+    height: 140px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    width: 190px;
+    height: 120px;
+}
+
+.logo a {
+    display: block;
+    width: 190px;
+    height: 120px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 190px 120px;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 30px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 132px;
+    height: 36px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 36px;
+    text-align: center;
+}
+
+/* 3.用before和after伪元素添加字体图标 */
+.shopcar::before {
+    font-family: "iconfont";
+    content: "\e601";
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    font-family: "iconfont";
+    content: '\e775';
+    margin-left: 10px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0px;
+}
+
+.navitems {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.nav {
+    height: 480px;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+}
+
+.fs_col1 {
+    float: left;
+    width: 190px;
+    height: 480px;
+    margin-right: 10px;
+}
+
+.cate {
+    position: relative;
+    width: 190px;
+    height: 470px;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.cate ul {
+    overflow: hidden;
+    height: 450px;
+}
+
+.cate ul li {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+    font-size: 14px;
+}
+
+.fs_col2 {
+    float: left;
+    height: 480px;
+    width: 790px;
+    margin-right: 10px;
+}
+
+.slideitems {
+    float: left;
+    height: 470px;
+    width: 590px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #666;
+}
+
+.slideitems img {
+    width: 100%;
+    height: 100%;
+}
+
+.focusitems {
+    float: left;
+    position: relative;
+    height: 480px;
+    width: 190px;
+    left: 0px;
+}
+
+.focusitems ul li {
+    width: 190px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.focusitems ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.fs_col3 {
+    float: left;
+    height: 480px;
+    width: 190px;
+}
+
+.user {
+    position: relative;
+    height: 102px;
+    width: 190px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.userimg {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 44px;
+    height: 44px;
+}
+
+.userimg a,
+.userimg img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.userimg a {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.usershow {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    left: 74px;
+    right: 10px;
+}
+
+.usershow a {
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+}
+
+.news {
+    overflow: hidden;
+    height: 130px;
+    background: #fff;
+}
+
+.newsheader {
+    height: 30px;
+    padding: 10px 0 0;
+    position: relative;
+    line-height: 20px;
+    font-size: 0;
+    margin-bottom: 8px;
+}
+
+.newsheader h5 {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #333;
+}
+
+.newsheader a {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+.newslist {
+    position: relative;
+    margin: 0 15px;
+    height: 88px;
+}
+
+.newsitem {
+    max-width: 160px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+    margin-bottom: 6px;
+}
+
+.newsitem span {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    height: 16px;
+    width: 35px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: 0;
+    color: #e1251b;
+    background-color: rgba(225, 37, 27, .08);
+    margin-right: 6px;
+}
+
+.service {
+    overflow: hidden;
+    position: relative;
+    height: 238px;
+}
+
+.service_entry {
+    overflow: hidden;
+    padding: 5px .5px;
+    background: #fff;
+}
+
+.service_list {
+    padding-top: 5px;
+    height: 225px;
+}
+
+.service_item {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 55px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.service_item a {
+    display: block;
+    position: relative;
+}
+
+.service_item a i {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+
+.service_item a span {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 2px solid #fff;
+    color: #333;
+}
+
+.seckill {
+    height: 260px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.seckill_countdown {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 100%;
+    color: #fff;
+    background-color: #e83632;
+    background-image: url(../images/seckill.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.countdowntit {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 31px;
+}
+
+.seckill_list {
+    position: relative;
+    float: left;
+    width: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.seckill_list ul {
+    font-size: 0;
+}
+
+.seckill_item {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    display: inline-block;
+}
+
+.seckill_item img {
+    width: 140px;
+    height: 140px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.seckill_item h6 {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.seckill_item span {
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    background: #fff;
+    text-align: center;
+    color: #e1251b;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.seckill_brand {
+    float: left;
+    width: 190px;
+    height: 260px;
+    text-align: center;
+}
+
+.seckill_brand img {
+    width: 120px;
+    height: 120px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.seckill_brand p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.action {
+    color: #e1251b;
+    border-radius: 14px;
+    width: 82px;
+    height: 24px;
+    text-align: center;
+    display: inline-block;
+    line-height: 22px;
+    font-weight: 700;
+    padding-left: 4px;
+    font-size: 12px;
+    border: 1px solid #e1251b;
+    margin-top: 4px;
+}
+
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 280px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+.mod_service ul li h5 {
+    float: left;
+    width: 36px;
+    height: 42px;
+    margin-right: 8px;
+}
+
+/* 4.使用精灵图，通过background定位获得对应位置的图案，有助于减少请求服务器次数 */
+.service_txt_duo {
+    background: url(../images/footer.png) no-repeat 0 -192px;
+}
+
+.service_txt_kuai {
+    background: url(../images/footer.png) no-repeat -41px -192px;
+}
+
+.service_txt_hao {
+    background: url(../images/footer.png) no-repeat -82px -192px;
+}
+
+.service_txt_shen {
+    background: url(../images/footer.png) no-repeat -123px -192px;
+}
+
+.service_txt p {
+    height: 50px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    padding-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}

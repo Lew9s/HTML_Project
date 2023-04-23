@@ -1,0 +1,128 @@
+{
+  "id": "3985618",
+  "name": "课设",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16398985",
+      "name": "向下",
+      "font_class": "xiangxia1",
+      "unicode": "e85d",
+      "unicode_decimal": 59485
+    },
+    {
+      "icon_id": "1284182",
+      "name": "加油卡",
+      "font_class": "jiayouqia",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "2076293",
+      "name": " 酒店",
+      "font_class": "jiudian",
+      "unicode": "e89b",
+      "unicode_decimal": 59547
+    },
+    {
+      "icon_id": "2076297",
+      "name": " 机票",
+      "font_class": "jipiao",
+      "unicode": "e89c",
+      "unicode_decimal": 59548
+    },
+    {
+      "icon_id": "6460215",
+      "name": "白条",
+      "font_class": "baitiao",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "7191776",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "10487577",
+      "name": "游戏",
+      "font_class": "youxi",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "11372681",
+      "name": "礼品卡",
+      "font_class": "lipinka",
+      "unicode": "e8b2",
+      "unicode_decimal": 59570
+    },
+    {
+      "icon_id": "15112772",
+      "name": "电影票",
+      "font_class": "dianyingpiao",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "18211079",
+      "name": "五金",
+      "font_class": "wujin",
+      "unicode": "e7a5",
+      "unicode_decimal": 59301
+    },
+    {
+      "icon_id": "27746211",
+      "name": "火车票",
+      "font_class": "huochepiao",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "28136846",
+      "name": "云_建站",
+      "font_class": "yun_jianzhan",
+      "unicode": "e776",
+      "unicode_decimal": 59254
+    },
+    {
+      "icon_id": "33096072",
+      "name": "手机话费",
+      "font_class": "shoujihuafei",
+      "unicode": "100f2",
+      "unicode_decimal": 65778
+    },
+    {
+      "icon_id": "1306",
+      "name": "购物车空",
+      "font_class": "gouwuchekong",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "577402",
+      "name": "向右1",
+      "font_class": "xiangyou1",
+      "unicode": "e775",
+      "unicode_decimal": 59253
+    },
+    {
+      "icon_id": "5387613",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "eb15",
+      "unicode_decimal": 60181
+    },
+    {
+      "icon_id": "1048878",
+      "name": "位置",
+      "font_class": "icon_location",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}
